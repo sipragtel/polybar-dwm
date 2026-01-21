@@ -37,6 +37,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `wm-restack`:
   - `bottom`: lowers polybar to the bottom of the window stack (same as the previous behavior of `generic`) ([`#2961`](https://github.com/polybar/polybar/pull/2961))
   - `ewmh`: Tries to use the `_NET_SUPPORTING_WM_CHECK` hint to position the bar ([`#2961`](https://github.com/polybar/polybar/pull/2961))
+- An option `unmute-on-scroll` for `internal/pulseaudio` and `internal/alsa` to unmute audio when the user scrolls on the widget.
 
 ### Changed
 - `custom/script`:
@@ -82,7 +83,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - `internal/tray`: The module must use the `<tray>` tag (this is the default) ([`#3037`](https://github.com/polybar/polybar/pull/3037))
 
-## Fixed
+### Fixed
 - Modules did not validate that all tags (e.g. `<label>`) used in a format were valid for that format ([`#3043`](https://github.com/polybar/polybar/issues/3043), [`#3045`](https://github.com/polybar/polybar/pull/3045))
 - `internal/tray`: Fixed `module-margin` and `separator` being applied to completely empty tray module ([`#3036`](https://github.com/polybar/polybar/issues/3036), [`#3037`](https://github.com/polybar/polybar/pull/3037))
 
@@ -104,7 +105,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 - A tray module with type `internal/tray` for positioning the tray like a module ([`#2689`](https://github.com/polybar/polybar/issues/2689))
-- `internal/temperature`: `%temperature-k%` token displays the temperature in degrees Kelvin ([`#2774`](https://github.com/polybar/polybar/discussions/2774), [`#2784`](https://github.com/polybar/polybar/pull/2784))
+- `internal/temperature`: `%temperature-k%` token displays the temperature in Kelvin ([`#2774`](https://github.com/polybar/polybar/discussions/2774), [`#2784`](https://github.com/polybar/polybar/pull/2784))
 - `internal/pulseaudio`: `reverse-scroll` option ([`#2664`](https://github.com/polybar/polybar/pull/2664))
 - `custom/script`: Repeat interval for script failure (`interval-fail`) and `exec-if` (`interval-if`) ([`#943`](https://github.com/polybar/polybar/issues/943), [`#2606`](https://github.com/polybar/polybar/issues/2606), [`#2630`](https://github.com/polybar/polybar/pull/2630))
 - `custom/ipc`:
